@@ -32,7 +32,7 @@ a {
 .first-block {
   background: #eeeff1;
   max-height: 700px;
-  max-width: 100%;
+  width: 100%;
   margin-top: 57px;
 }
 .first-block__main {
@@ -90,5 +90,26 @@ a {
   font-size: 48px;
   line-height: 79px;
 }
+.first-block__text p {
+  margin-top: 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
 .first-block__button {
+  display: block;
+  width: 225px;
+  height: 65px;
+  margin-top: 60px;
+  background-color: #34547a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
 }
