@@ -244,30 +244,41 @@ a {
   padding-top: 100px;
 }
 .sixth-block__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 0 auto;
   max-width: 540px;
-  text-align: center;
+  height: 440px;
+}
+.sixth-block__ne {
+  display: flex;
+  max-width: 540px;
+  justify-content: space-between;
+}
+.sixth-block__name,
+.sixth-block__email {
+  width: 255px;
+  height: 40px;
 }
 #sixth-block__name,
 #sixth-block__email {
-  max-width: 245px;
-  max-height: 50px;
-  padding: 10px 105px 10px 5px;
+  height: 100%;
+  width: 100%;
   background-color: #ffffff;
   border: none;
-}
-#sixth-block__email {
-  margin-left: 30px;
+  padding: 0;
+  margin: 0;
 }
 #sixth-block__text {
   max-height: 175px;
   max-width: 540px;
   border: none;
-  padding-bottom: 170px;
+  padding: 0 0 170px 0;
   width: 100%;
 }
 #sixth-block__send {
-  margin: 50px auto 100px auto;
+  margin: 30px auto 80px auto;
   max-width: 190px;
   max-height: 55px;
   padding: 10px 30px;
