@@ -47,15 +47,17 @@ a {
 .first-block__icon {
   display: flex;
   flex: 0 1 40%;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 .first-block__icon img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  padding: 10px 0 0 10px;
 }
 .first-block__icon-container {
   height: 60px;
   width: 96px;
+  padding: 10px 0 0 10px;
 }
 .first-block__items {
   display: flex;
@@ -69,7 +71,10 @@ a {
   letter-spacing: 0.1em;
 }
 .first-block__items > li {
-  padding: 0 20px 0 20px;
+  padding: 0 15px;
+}
+.first-block__items {
+  padding-inline-start: 0;
 }
 .first-block__body {
   margin-top: 162px;
@@ -85,7 +90,7 @@ a {
 }
 .first-block__text {
   flex: 0 1 60%;
-  margin: 0 0 0 130px;
+  margin: 0 60px 0 130px;
 }
 .first-block__text > h1 {
   font-style: normal;
@@ -140,12 +145,11 @@ a {
 }
 .second-block__project-list {
   background-color: #34547a;
-  max-height: 250px;
   text-align: center;
   padding: 80px 0;
 }
 .second-block__project-item {
-  max-width: 141px;
+  max-width: 15%;
 }
 .second-block__project-item img {
   width: 100%;
@@ -160,7 +164,7 @@ a {
 }
 .third-block__habits-list {
   flex: 0 1 595px;
-  padding: 100px 145px 100px 0;
+  padding: 100px 80px 100px 80px;
   box-sizing: border-box;
 }
 #habit {
@@ -212,8 +216,7 @@ a {
   position: relative;
 }
 .fifth-block__image {
-  max-width: 480px;
-  max-height: 480px;
+  flex: 0 1 25%;
 }
 .fifth-block__image img {
   width: 100%;
@@ -222,26 +225,31 @@ a {
 }
 #fifth-block-eyes {
   position: absolute;
-  top: 175px;
-  left: 670px;
-  max-height: 100px;
-  max-width: 100px;
+  top: 20%;
+  left: 35%;
+  width: 6%;
 }
 .fifth-block__icons {
-  margin: 72px auto 100px auto;
+  margin: 80px auto;
   display: flex;
+  display: nowrap;
 }
 .fifth-block__icon {
   margin: 0 15px;
+  width: 25%;
+}
+.fifth-block__icon img {
+  width: 100%;
+  height: 100%;
 }
 /* Sixth block */
 .sixth-block {
   background-color: #eeeff1;
 }
 .sixth-block__about {
-  margin: 0 auto 65px auto;
+  margin: 0 auto;
   max-width: 540px;
-  padding-top: 100px;
+  padding: 5% 0;
 }
 .sixth-block__form {
   display: flex;
@@ -278,7 +286,7 @@ a {
   width: 100%;
 }
 #sixth-block__send {
-  margin: 30px auto 80px auto;
+  margin: 50px auto;
   max-width: 190px;
   max-height: 55px;
   padding: 10px 30px;
@@ -294,7 +302,7 @@ a {
 .seventh-block__raw {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 .seventh-block__text h3 {
   font-style: normal;
@@ -316,4 +324,99 @@ a {
 }
 .seventh-block__icon {
   margin-left: 22px;
+}
+/* @media requests */
+@media (max-width: 1024px) {
+  /* First block */
+  .first-block__body {
+    margin-top: 80px;
+  }
+  .first-block__image {
+    margin-left: 50px;
+  }
+  .first-block__text {
+    margin: 0 50px 0 50px;
+  }
+  .first-block__text > h1 {
+    font-size: 36px;
+  }
+  .first-block__raw {
+    margin-bottom: 80px;
+  }
+  /* Second block */
+  .second-block__about {
+    margin: 80px auto;
+  }
+  .second-block__project-item {
+    max-width: 25%;
+    margin: 10px;
+  }
+  /* Third block */
+  .third-block {
+    padding: 0;
+  }
+  .third-block__habits {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-block__habits-list {
+    padding: 8%;
+    text-align: center;
+    flex: 0 1 auto;
+  }
+  /* Fourth block */
+  .fourth-block__about {
+    padding: 8% 0;
+  }
+  .fourth-block__image {
+    padding-bottom: 80px;
+  }
+  /* Fifth block */
+  .fifth-block__image {
+    flex: 0 1 50%;
+  }
+  #fifth-block-eyes {
+    top: 10%;
+    left: 70%;
+    width: 10%;
+  }
+  /* Seventh block */
+  .seventh-block__raw {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* First block */
+  .first-block__text > h1 {
+    font-size: 24px;
+  }
+  .first-block__items {
+    font-size: 14px;
+  }
+  .first-block__body {
+    margin-top: 50px;
+  }
+  .first-block__raw {
+    margin-bottom: 50px;
+  }
+  .first-block__text > p {
+    margin: 15px 0;
+  }
+  .first-block__button {
+    margin-top: 30px;
+  }
+  /* Second block */
+  .second-block__project-item {
+    max-width: 40%;
+  }
+  /* Fifth block */
+  .fifth-block__icons {
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fifth-block__icon {
+    width: 40%;
+  }
+  /* Sixth block */
 }
